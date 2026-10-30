@@ -2,90 +2,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Developer Journey</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abid | Developer</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #050816;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
-    .container {
-      max-width: 650px;
-      width: 100%;
-      background: #1e293b;
-      padding: 40px 25px;
-      border-radius: 18px;
-      text-align: center;
-    }
+.card {
+  max-width: 600px;
+  width: 100%;
+  padding: 45px 25px;
+  text-align: center;
+  background: #101b35;
+  border: 1px solid #00d9ff;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00d9ff55;
+  animation: glow 3s infinite alternate;
+}
 
-    h1 {
-      color: #38bdf8;
-      margin-bottom: 15px;
-    }
+h1 {
+  color: #00d9ff;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
 
-    p {
-      color: #cbd5e1;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
+p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
 
-    .button {
-      display: inline-block;
-      background: #0284c7;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 5px;
-    }
+button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #00d9ff;
+  color: #050816;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    .button:hover {
-      background: #0369a1;
-    }
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00d9ff;
+}
 
-    footer {
-      margin-top: 30px;
-      color: #94a3b8;
-      font-size: 13px;
-    }
-  </style>
+@keyframes glow {
+  from { box-shadow: 0 0 10px #00d9ff55; }
+  to { box-shadow: 0 0 35px #00d9ffaa; }
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Hello, I'm Abid!</h1>
-
-    <p>
-      Welcome to my Developer Journey.
-      I am learning HTML, CSS, JavaScript,
-      GitHub and Web Development.
-    </p>
-
-    <h2>My Goals</h2>
-    <p>Build websites • Learn Coding • Create Projects</p>
-
-    <a class="button" href="https://github.com/" target="_blank">
-      My GitHub
-    </a>
-
-    <footer>
-      © 2026 My Developer Journey
-    </footer>
-  </div>
+<div class="card">
+  <h1>ABID ALAM</h1>
+  <p>Future Developer | AI Enthusiast | Tech Learner</p>
+  <p>Welcome to my futuristic digital world!</p>
+  <button onclick="alert('Welcome to my website!')">
+    Explore My World
+  </button>
+</div>
 </body>
 </html>
