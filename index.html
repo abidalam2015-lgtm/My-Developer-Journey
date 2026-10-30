@@ -1,84 +1,44 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abid | Developer</title>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #050816;
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.card {
-  max-width: 600px;
-  width: 100%;
-  padding: 45px 25px;
-  text-align: center;
-  background: #101b35;
-  border: 1px solid #00d9ff;
-  border-radius: 20px;
-  box-shadow: 0 0 30px #00d9ff55;
-  animation: glow 3s infinite alternate;
-}
-
-h1 {
-  color: #00d9ff;
-  font-size: 38px;
-  margin-bottom: 20px;
-}
-
-p {
-  color: #cbd5e1;
-  line-height: 1.7;
-  margin-bottom: 25px;
-}
-
-button {
-  padding: 13px 25px;
-  border: none;
-  border-radius: 8px;
-  background: #00d9ff;
-  color: #050816;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 20px #00d9ff;
-}
-
-@keyframes glow {
-  from { box-shadow: 0 0 10px #00d9ff55; }
-  to { box-shadow: 0 0 35px #00d9ffaa; }
-}
-</style>
+  <title>My Smart Website</title>
+  <style>
+    body {
+      background: #101827;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      padding: 15px 25px;
+      margin: 10px;
+      background: #00d9ff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
 </head>
-
 <body>
-<div class="card">
-  <h1>ABID ALAM</h1>
-  <p>Future Developer | AI Enthusiast | Tech Learner</p>
-  <p>Welcome to my futuristic digital world!</p>
-  <button onclick="alert('Welcome to my website!')">
-    Explore My World
-  </button>
-</div>
+
+  <h1 id="heading">Hello Abid!</h1>
+  <p id="message">Welcome to my website.</p>
+
+  <button onclick="changeText()">Change Text</button>
+  <button onclick="changeColor()">Change Background</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("heading").innerText =
+        "JavaScript Successfully Working!";
+    }
+
+    function changeColor() {
+      document.body.style.background = "#064e3b";
+    }
+  </script>
+
 </body>
 </html>
