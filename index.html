@@ -1,32 +1,91 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Developer Journey</title>
+
   <style>
-    body {
-      background: #101827;
-      color: white;
-      font-family: Arial;
-      text-align: center;
-      padding: 60px 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 { color: #00e5ff; }
-    .card {
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 650px;
+      width: 100%;
       background: #1e293b;
-      padding: 25px;
-      border-radius: 15px;
-      max-width: 400px;
-      margin: 30px auto;
+      padding: 40px 25px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #cbd5e1;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #0284c7;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #0369a1;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: 13px;
     }
   </style>
 </head>
+
 <body>
-  <h1>My Developer Journey</h1>
-  <div class="card">
-    <h2>Hello, World! 🚀</h2>
-    <p>I'm learning Advanced Development.</p>
-    <p>Skills: GitHub | HTML | CSS | JavaScript</p>
+  <div class="container">
+    <h1>Hello, I'm Abid!</h1>
+
+    <p>
+      Welcome to my Developer Journey.
+      I am learning HTML, CSS, JavaScript,
+      GitHub and Web Development.
+    </p>
+
+    <h2>My Goals</h2>
+    <p>Build websites • Learn Coding • Create Projects</p>
+
+    <a class="button" href="https://github.com/" target="_blank">
+      My GitHub
+    </a>
+
+    <footer>
+      © 2026 My Developer Journey
+    </footer>
   </div>
 </body>
 </html>
